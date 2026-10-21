@@ -1,0 +1,6 @@
+id_produto,nome_produto,categoria,preco_referencia
+101,Teclado Mecânico,Periféricos,250.0
+102,Monitor 24 polegadas,Monitores,899.9
+103,Cadeira Ergonômica,Móveis,1200.0
+104,Webcam Full HD,Acessórios,180.0
+105,Notebook 15 polegadas,Computadores,3500.0
