@@ -83,6 +83,21 @@ target/
 profile_default/
 ipython_config.py
 
+# Banco de dados local
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Dados processados gerados pelo ETL
+data/processed/*.csv
+
+# Logs do projeto
+logs/*.log
+
+# Arquivos temporários
+.DS_Store
+Thumbs.db
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
