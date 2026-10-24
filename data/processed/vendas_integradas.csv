@@ -1,0 +1,12 @@
+id_venda,id_cliente,id_produto,quantidade,preco_unitario,data_venda,nome,cidade,estado,nome_produto,categoria,preco_referencia
+1001,1.0,101,2.0,250.0,2026-05-04,Ana Souza,São Paulo,SP,Teclado Mecânico,Periféricos,250.0
+1002,2.0,102,1.0,899.9,2026-05-18,Bruno Lima,Belo Horizonte,MG,Monitor 24 polegadas,Monitores,899.9
+1003,3.0,103,1.0,1150.0,2026-06-02,Carla   Mendes,Curitiba,PR,Cadeira Ergonômica,Móveis,1200.0
+1004,4.0,105,1.0,3500.0,2026-06-21,Diego Ferreira,Rio De Janeiro,RJ,Notebook 15 polegadas,Computadores,3500.0
+1005,5.0,104,3.0,175.0,2026-07-09,Elisa Costa,Fortaleza,CE,Webcam Full HD,Acessórios,180.0
+1006,1.0,102,2.0,899.9,2026-07-23,Ana Souza,São Paulo,SP,Monitor 24 polegadas,Monitores,899.9
+1007,6.0,101,4.0,240.0,2026-08-11,Felipe Rocha,Porto Alegre,RS,Teclado Mecânico,Periféricos,250.0
+1008,2.0,103,0.0,1200.0,2026-08-27,Bruno Lima,Belo Horizonte,MG,Cadeira Ergonômica,Móveis,1200.0
+1009,,104,1.0,180.0,2026-09-05,,,,Webcam Full HD,Acessórios,180.0
+1010,5.0,105,2.0,3450.0,2026-09-19,Elisa Costa,Fortaleza,CE,Notebook 15 polegadas,Computadores,3500.0
+1011,3.0,101,1.0,250.0,2026-10-03,Carla   Mendes,Curitiba,PR,Teclado Mecânico,Periféricos,250.0
