@@ -21,7 +21,7 @@ def integrar_dados():
     # Identificar clientes e produtos inexistentes
     clientes_invalidos = ~df_venda["id_cliente"].isin(df_cliente["id_cliente"])
     produtos_invalidos = ~df_venda["id_produto"].isin(df_produto["id_produto"])
-
+    
     if clientes_invalidos.any():
         raise ValueError("Existem vendas com clientes inexistentes.")
 
