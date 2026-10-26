@@ -2,6 +2,10 @@ import logging # serve para registrar mensagens de log durante a execução do E
 from clean_data import limpar_dados
 from merge_data import integrar_dados
 from load_data import carregar_dados
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent 
+LOG_DIR = BASE_DIR / "logs" 
 
 def executar_etl():
     try:
@@ -23,11 +27,14 @@ def executar_etl():
         raise
 
 if __name__ == "__main__":
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+
     logging.basicConfig(
-        filename="logs/etl.log",
+        filename=str(LOG_DIR / "etl.log"),
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s"
     )
+
     executar_etl()
 
 

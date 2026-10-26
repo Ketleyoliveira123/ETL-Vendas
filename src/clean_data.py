@@ -1,9 +1,9 @@
 import pandas as pd
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-RAW_DIR = BASE_DIR / "data" / "raw"
-PROCESSED_DIR = BASE_DIR / "data" / "processed"
+BASE_DIR = Path(__file__).resolve().parent.parent # esse comando serve para pegar o caminho do arquivo atual e voltar 2 pastas
+PROCESSED_DIR = BASE_DIR / "data" / "processed" # ESSE comando serve para criar o caminho da pasta processed
+RAW_DIR = BASE_DIR / "data" / "raw" # ESSE comando serve para criar o caminho da pasta raw
 
 
 def limpar_dados():
@@ -24,6 +24,9 @@ def limpar_dados():
     df_venda["quantidade"] = pd.to_numeric(
         df_venda["quantidade"], errors="coerce"
     )
+
+    df_venda = df_venda.dropna(subset=["quantidade"])
+    df_venda = df_venda[df_venda["quantidade"] > 0]
 
     # Corrigir a quantidade da venda 1008
     df_venda.loc[df_venda["id_venda"] == 1008, "quantidade"] = 2
