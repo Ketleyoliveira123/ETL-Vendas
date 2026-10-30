@@ -1,16 +1,20 @@
+-- Total de vendas
 SELECT COUNT(*) AS total_vendas
 FROM vendas;
 
-SELECT SUM(quantidade  * preco_unitario) AS faturamento_total
+-- Faturamento total
+SELECT ROUND(SUM(quantidade * preco_unitario), 2) AS faturamento_total
 FROM vendas;
 
-SELECT 
-    cidade, 
+-- Faturamento por cidade
+SELECT
+    cidade,
     ROUND(SUM(quantidade * preco_unitario), 2) AS faturamento_total
 FROM vendas
 GROUP BY cidade
 ORDER BY faturamento_total DESC;
 
+-- Produtos mais vendidos
 SELECT
     nome_produto,
     CAST(SUM(quantidade) AS INTEGER) AS total_vendido
